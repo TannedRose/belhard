@@ -4,7 +4,7 @@ m = int(input("кратные какому числу должны быть чи
 k = int(input("больше какого числа должны быть выводимые числа? "))
 up = (n * (m + m))
 for i in range(k, up):
-    if i > k and i % m == 0:
+    if i % m == 0:
         print(i)
 
 

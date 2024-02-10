@@ -2,13 +2,13 @@
 # образом, чтобы остались только строки, использование дополнительного списка
 # незаконно
 
-a = ['hello', 1,  '2', 3, 'world']
-print(type(a))
-b = []
-c = []
+# a = ['hello', 1,  '2', 3, 'world']
+# print(type(a))
 
+a = ["test", 1, False, "2", [2]]
 
+# print([i for i in a if isinstance(i, str)])
 for i in a:
-    c.append(i) if i.isidentifier() else b.append(i)
-
+    if isinstance(i, str):
+        print(i, end=', ')
 

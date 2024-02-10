@@ -8,6 +8,9 @@ data = {
     3: {"name": "ivan", "surname": 'melnikov', "fnumber": '+375292222222', "email": ""},
     4: {"name": "kate", "surname": 'elkina', "fnumber": '+375442222222', "email": 'EKate@gmail.com'}
 }
-for i in data:
-    if not data[i]["email"]:
-        print(data[i]["name"], end=' ')
+for j in data.items():
+    if "email" not in j:
+        for i in data:
+            if not data[i]["email"]:
+                print(data[i]["name"], end=' ')
+

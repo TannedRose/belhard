@@ -21,4 +21,4 @@ a = ''.join(a)
 for i in a:
     for j, value in b.items():
         if i == j:
-            print(value, end="")
+            print(value, end="; ")

@@ -2,8 +2,8 @@
 # использования функции int
 
 a = int(input("введите число "))
-print(bin(a))
-
+a = bin(a)
+print(a)
 a = str(a)
 b = eval(a)
 print(b)

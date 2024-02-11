@@ -6,8 +6,8 @@ data = {
         1: {"name": "mike", "surname": 'kozlov', "fnumber": '+375291111111', "email": 'mikeK@gmail.com'},
         2: {"name": "liz", "surname": 'ivanova', "fnumber": '+375441111111', "email": ' '},
         3: {"name": "ivan", "surname": 'melnikov', "fnumber": '+375292222222', "email": ""},
-        4: {"name": "ivan2", "surname": 'melnikov', "fnumber": '+375292222222'},
-        5: {"name": "ivan3", "surname": 'melnikov', "fnumber": '+375292222222', "email": 'ugouvu'}
+        4: {"name": "ivan2", "surname": 'melnikov', "fnumber": '+375293333333'},
+        5: {"name": "ivan3", "surname": 'melnikov', "fnumber": '+375294444444', "email": 'ugouvu'}
        }
 
 for user_id, info_user in data.items():

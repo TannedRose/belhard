@@ -9,6 +9,6 @@ a = ["test", 1, False, "2", [2]]
 
 # print([i for i in a if isinstance(i, str)])
 for i in a:
-    if isinstance(i, str):
+    if type(i) is str:
         print(i, end=', ')
 

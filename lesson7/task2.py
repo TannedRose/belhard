@@ -14,31 +14,25 @@ count_p = int(input("введите количество пассажиров с
 
 
 class Taxi:
+
     def __init__(self, count_passenger: int, car_numb: int, is_baby: bool, is_busy: bool):
         self.cp = count_passenger
         self.baby = is_baby
         self.busy = is_busy
         self.c_numb = car_numb
+        # self.cars = cars
 
 
-    def find_car(self):
+        def find_car(self, count_passengers, is_baby):
+            ...
 
 
 
 
-
-# cars = {
-#     "car1": Taxi(7, 1, False, is_busy=True),
-#     "car2": Taxi(5, 2, True, is_busy=False),
-#     "car3": Taxi(5, 3, False, is_busy=True),
-#     "car4": Taxi(3, 4, False, is_busy=False),
-#     "car5": Taxi(5, 5, True, is_busy=False)}
 
 car1 = Taxi(7, 1, False, True)
 car2 = Taxi(5, 2, True, False)
 car3 = Taxi(5, 3, False, True)
 car4 = Taxi(3, 4, False, False)
 car5 = Taxi(5, 5, True, False)
-
-
 

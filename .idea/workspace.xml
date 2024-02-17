@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7575986-7e49-4bba-be04-e85eae2d5984" name="Changes" comment=",,,">
-      <change afterPath="$PROJECT_DIR$/lesson7/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson7/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson7/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson7/task4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_02_2024_19_02__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson6/task9.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/task9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/task2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/task2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
     &quot;git-widget-placeholder&quot;: &quot;homework&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.task4 (1)">
+  <component name="RunManager" selected="Python.task2">
     <configuration name="sd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bh74" />
       <option name="ENV_FILES" value="" />
@@ -196,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.task4 (1)" />
         <item itemvalue="Python.task2" />
+        <item itemvalue="Python.task4 (1)" />
         <item itemvalue="Python.task9" />
         <item itemvalue="Python.task4" />
         <item itemvalue="Python.sd" />
@@ -316,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707669440682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=",,,">
+      <option name="closed" value="true" />
+      <created>1708175917316</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708175917316</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

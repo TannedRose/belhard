@@ -47,8 +47,7 @@ class Taxi:
 
 taxi_park = Taxi([car_1, car_2,])
 
-# is_b = bool(input("введите True если в машие будет ехать ребенок, False если ребенка не будет: "))
-# count_p = int(input("введите количество пассажиров с учетом ребенка (если он есть): "))
+
 
 
 found_car = taxi_park.find_car(count_p, is_b)

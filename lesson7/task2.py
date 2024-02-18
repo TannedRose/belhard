@@ -21,13 +21,6 @@ class Car:
         self.is_busy = is_busy
         self.car_numb = car_numb
 
-    # def __str__(self):
-    #     return (f"цвет={self.color}, "
-    #             f"количество поссажирских мест={self.seat}, "
-    #             f"детское кресло={self.b_seat}"
-    #             f"")
-
-
 car_1 = Car("красный", 3, False, True, 1)
 car_2 = Car("синий", 7, True, True, 2)
 
@@ -43,19 +36,14 @@ class Taxi:
                 if is_b is False or (is_b is True and car.is_baby_seat is True):
                     return car
 
-
-
 taxi_park = Taxi([car_1, car_2,])
-
-
-
 
 found_car = taxi_park.find_car(count_p, is_b)
 if found_car:
     print("Найдена машина:", found_car)
 else:
     print("Машина не найдена.")
-# found_car.is_busy = True
+found_car.is_busy = True
 
 
 

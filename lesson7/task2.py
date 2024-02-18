@@ -16,8 +16,8 @@ count_p = int(input("введите количество пассажиров с
 class Car:
     def __init__(self, color: str, count_passenger_seats: int, is_baby_seat: bool, is_busy: bool, car_numb: int):
         self.color = color
-        self.seat = count_passenger_seats
-        self.b_seat = is_baby_seat
+        self.count_passenger_seats = count_passenger_seats
+        self.is_baby_seat = is_baby_seat
         self.busy = is_busy
         self.car_numb = car_numb
 
@@ -28,8 +28,8 @@ class Car:
     #             f"")
 
 
-car_1 = Car(color="красный", count_passenger_seats=7, is_baby_seat=False, is_busy=False, car_numb=1)
-car_2 = Car(color="синий", count_passenger_seats=7, is_baby_seat=True, is_busy=False, car_numb=2)
+car_1 = Car("красный", 7, False, False, 1)
+car_2 = Car("синий", 7, True, False, 2)
 
 
 class Taxi:
@@ -37,9 +37,9 @@ class Taxi:
     def __init__(self, cars: list[Car]):
         self.cars = cars
 
-    def find_car(self, count_passenger_seats, is_baby_seat):
+    def find_car(self):
         for car in self.cars:
-            # if car.is_busy is False and car.count_passenger_seats >= count_p:
-            #     if is_b is False or (is_b is True and car.is_baby_seat is True):
-            car.is_busy = True
-            print("ok")
+            if car.is_busy is False and car.count_passenger_seats >= count_p:
+                if is_b is False or (is_b is True and car.is_baby_seat is True):
+                    car.is_busy = True
+                    print("ok")

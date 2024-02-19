@@ -19,5 +19,6 @@ class Car:
                 f"детское кресло={self.b_seat}"
                 f"")
 
+
 car_1 = Car(color="красный", count_passenger_seats=7, is_baby_seat=True, is_busy=False)
 print(car_1)

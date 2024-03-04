@@ -7,42 +7,43 @@ with connect(dsn="postgres://user10:thmCHbHR0.76.60.77:6666/user10", cursor_fact
     with conn.cursor() as cur:
         cur.execute("""
         CREATE TABLE IF NOT EXISTS users(
-                id INT PRIMARY KEY,
-                department_id INT FOREIGN KEY,
+                id SERIAL PRIMARY KEY,
+                department_id INTEGER FOREIGN KEY,
                 sub_department_id INT FOREIGN KEY
                 
         );
     """)
         cur.execute("""
             CREATE TABLE IF NOT EXISTS departments(
-                    id INT PRIMARY KEY,
+                    id SERIAL PRIMARY KEY,
                     name VARCHAR(32)
         );
     """)
         cur.execute("""
             CREATE TABLE IF NOT EXISTS sub_departments(
-                    id INT PRIMARY KEY,
+                    id SERIAL PRIMARY KEY,
                     name VARCHAR(32)
         );
     """)
         cur.execute("""
             CREATE TABLE IF NOT EXISTS chats(
-                    id INT PRIMARY KEY,
+                    id SERIAL PRIMARY KEY,
                     name VARCHAR(32)
         );
     """)
         cur.execute("""
              CREATE TABLE IF NOT EXISTS chats_relations(
-                    id INT PRIMARY KEY,
-                    chat_id INT PRIMARY KEY NOT NULL,
-                    department_id INT FOREIGN KEY,
-                    sub_department_id INT FOREIGN KEY
+                    id SERIAL PRIMARY KEY,
+                    chat_id INTEGER PRIMARY KEY NOT NULL,
+                    department_id INTEGER FOREIGN KEY,
+                    sub_department_id INTEGER FOREIGN KEY
                     
         );
     """)
+cur.commit()
 
 cur.execute("""
-            SELECT chats.name 
+            SELECT chats.name, chats.id
             FROM users INNER JOIN departments ON users.department_id = departments.id
             INNER JOIN sub_departments ON users.sub_department_id = sub_departments.id
             FROM chats_relations INNER JOIN departments ON chats_relations.department_id = departments.id

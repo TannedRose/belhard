@@ -3,8 +3,8 @@
 # from psycopg2.extras import NamedTupleCursor
 from datetime import datetime
 
-# postgres://username:password@host:port/db_name
-# with connect(dsn="postgres://admin:admin@217.76.60.77:6666/admin", cursor_factory=NamedTupleCursor) as conn:
+
+# with connect(dsn="postgres://user10:thmCHbHR0.76.60.77:6666/user10", cursor_factory=NamedTupleCursor) as conn:
 #     with conn.cursor() as cur:  # type: cursor
         # cur.execute("""
         #     CREATE TABLE IF NOT EXISTS tags(
@@ -147,3 +147,6 @@ with session_maker() as session:
     # session.commit()
     # session.delete(instance=tag)
     # session.commit()
+
+
+
